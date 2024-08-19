@@ -1,2 +1,15 @@
 # Phonepe-Pulse-Data-Visualization-and-Exploration
 This project aims to extract a large amount of data related to various metrics and statistics from a Phonepe pulse Github repository and process the data to obtain insights and information that can be visualized in a user-friendly tool using Streamlit and Plotly.
+I have used VSCode to start the project and installed necessary packages and created a new environment to work on this project.
+In my VSCode, I have cloned a PhonePe Pulse Data from a Github link provided by the GUVI team and extracted & downloaded the necessary data that the project requires.
+The next step is I have written code a code to create a new database "phonepe_pulse.db" with respective tables and inserted the downloaded data into the database.
+Now, I have written a code to create a Streamlit app with a dashboard matching my project requirements.
+I have created two pages in my Streamlit app namely "Dashboard" and "Query Data". At the left side of the app there is a navigation bar where there are lot of options to select.
+At first, there is a dropdown button "Select Page" with two options - Dashboard and Query Data. And there are two other radio buttons named "Transactions" and "Users" below that. And there are two more other dropdown buttons "Select Year" and "Select Quarter".
+If we have to know the information about the Transactions or Users, we can select the radio buttons of the same name respectively.
+In the "Dashboard" page, I have inserted a 2D India map. After selecting the "Transactions" button and hovering on any state in the map, the Transaction amount and the Transaction count for the selected Year and the Quarter will displayed along with the State name.
+Below the 2D India map, the table named "Transactions" will be displayed with the values of Total Transactions(Count), Total Payment Value(Amount), Avg. Transaction Value. These three values will be based on the selected particular year and the quarter.
+Similarly, there is a table named "Categories" displayed with the values of Merchant payments, Peer-to-peer payments, Recharge & bill payments, Financial Services, and Others.
+Below this there will be three buttons "States", "Districts" and "Postal Codes". Clicking on these three buttons will display the top 10 states, districts and postal codes based on the selected particular year and the quarter.
+Now, we move onto the tables that appears after choosing the radio button "Users". Similiar to the "Transactions" button, the map hovering displays State name, User count and User percentage. And a table "Users" is displayed with the values of Registered PhonePe users, and PhonePe app opens. Similiar to Transactions, there is also three buttons "States", "Districts" and "Postal Codes" and the top 10 results are displayed based on the users data.
+I have created an other page as I mentioned earlier and the page is named "Query Data". Based on the insights and the observation of extracted data I have made up 10 questions with it's queries written in the code.
