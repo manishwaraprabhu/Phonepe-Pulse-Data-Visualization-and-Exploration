@@ -320,6 +320,7 @@ elif page == "Query Data":
         # Close the database connection
         conn.close()
 
+        # Capitalize the first letter of each word in 'District' column if it exists
         if 'District' in query_result.columns:
             query_result['District'] = query_result['District'].str.title()
 
