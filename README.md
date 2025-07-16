@@ -94,7 +94,3 @@ Provides analytical insights derived from SQL queries on the underlying database
    ```bash
    streamlit run phonepe_app.py
    ```
-
-## 📬 Feedback
-
-Feel free to raise issues or suggest improvements via the Issues tab or a pull request.
